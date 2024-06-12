@@ -1,0 +1,16 @@
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\CocktailApp.exe.config
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\CocktailApp.exe
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\CocktailApp.pdb
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\System.Reactive.dll
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\System.Reactive.xml
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\obj\Debug\CocktailApp.csproj.AssemblyReference.cache
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\obj\Debug\CocktailApp.csproj.CoreCompileInputs.cache
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\obj\Debug\CocktailApp.csproj.CopyComplete
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\obj\Debug\CocktailApp.exe
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\obj\Debug\CocktailApp.pdb
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Princeps\Desktop\Sistemsko programiranje\Projekti\CocktailInstructionApp\CocktailApp\CocktailApp\bin\Debug\Newtonsoft.Json.xml
