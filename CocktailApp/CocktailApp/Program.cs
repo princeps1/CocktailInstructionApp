@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
 using System.Net;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace CocktailApp
@@ -18,17 +14,20 @@ namespace CocktailApp
             listener.Start();
 
             var stream = new CocktailStream();
-            var observer = new CocktailObserver("cao");
+            var observer = new CocktailObserver();
 
-            stream.Subscribe( observer );
+            var subscription = stream.Subscribe( observer );
 
-            while(true ) 
-            {
-                HttpListenerContext context = listener.GetContext();
-                _= Task.Run(() => stream.SearchAsync(context));
-            }
+
+            HttpListenerContext context = await listener.GetContextAsync();
+            await stream.SearchAsync(context);
+
+            Console.ReadLine();
+            subscription.Dispose();
+            listener.Stop();
         }
         //http://localhost:5050/Margarita
+        //http://localhost:5050/Blue
         //http://localhost:5050/asd
     }
 }

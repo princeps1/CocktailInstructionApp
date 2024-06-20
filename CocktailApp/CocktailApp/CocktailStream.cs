@@ -55,7 +55,7 @@ namespace CocktailApp
                    {
                        Name = (string)cocktail["strDrink"],
                        Instructions = (string)cocktail["strInstructions"],
-                       GlassType = (string)cocktail["strGlass"] // Ispravka: pretpostavio sam da je "Cocktail glass" bio tip stakla
+                       GlassType = (string)cocktail["strGlass"] 
                    })
                 );
 
@@ -64,14 +64,6 @@ namespace CocktailApp
                     cocktailsSubject.OnNext(cocktail);
                 }
                 cocktailsSubject.OnCompleted();
-
-                //foreach (var cocktail in lista)
-                //{
-                //    Console.WriteLine($"Name: {cocktail.Name}");
-                //    Console.WriteLine($"Instructions: {cocktail.Instructions}");
-                //    Console.WriteLine($"Glass Type: {cocktail.GlassType}");
-                //    Console.WriteLine(); // Prazan red između svakog koktela
-                //}
 
             }
             catch (Exception ex)
@@ -84,8 +76,8 @@ namespace CocktailApp
         public IDisposable Subscribe(IObserver<Cocktail> observer)
         {
             return cocktailsSubject
-                .SubscribeOn(ThreadPoolScheduler.Instance)
-                .ObserveOn(ThreadPoolScheduler.Instance)
+                .SubscribeOn(ThreadPoolScheduler.Instance)//pretplata se izvrsava asinhrono,glavna nit se ne blokira
+                .ObserveOn(ThreadPoolScheduler.Instance)//observable emituje asinhrono,obavestenja koja observer prima bice isporucena preko worker niti
                 .Subscribe(observer);
         }
     }

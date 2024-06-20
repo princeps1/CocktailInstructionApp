@@ -1,27 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using System.Windows;
 
 namespace CocktailApp
 {
     public class CocktailObserver : IObserver<Cocktail>
     {
-        private readonly string name;
-        private List<string> words = new List<string>(); // Polje za čuvanje reči
 
-        public CocktailObserver(string name)
-        {
-            this.name = name;
-        }
+        private List<string> words = new List<string>(); // Polje za čuvanje reči
+         
 
         public void OnCompleted()
         {
-            foreach (var word in words)
-            {
-                Console.WriteLine(word);
-            }
+            SortWord();
             Console.WriteLine(); // Prazan red između svakog koktela
-            Console.WriteLine(); // Prazan red između svakog koktela
+            Console.WriteLine();
             Console.WriteLine("Svi kokteli su uspesno pribavljeni");
         }
 
@@ -42,11 +37,29 @@ namespace CocktailApp
             Console.WriteLine(); // Prazan red između svakog koktela
         }
 
-        // Metoda za dobijanje svih reči
-        public List<string> GetAllWords()
+        public void SortWord()
         {
-            return words;
+            Dictionary<string, int> WordCloud = new Dictionary<string, int>();  
+            foreach (string word in words)
+            {
+                if (WordCloud.ContainsKey(word))
+                {
+                    WordCloud[word]++;
+                }
+                else
+                {
+                    WordCloud[word] = 1;
+                }
+            }
+            var SortedWordCloud = WordCloud.OrderByDescending(entry => entry.Value);
+
+            foreach (KeyValuePair<string, int> entry in SortedWordCloud)
+            {
+                Console.WriteLine($"{entry.Key} - {entry.Value}");
+            }
+            
         }
+        
     }
 }
 
